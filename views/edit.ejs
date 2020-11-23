@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> </title>
+</head>
+<body>
+    
+    <form action="" method="POST">
+        
+        <p>
+            <label for="id">ID</label>
+            <input type="number" name="id" id="id" value="<%= jsonProductosFiltrado.id %>" readonly >
+        </p>
+
+        <p>
+            <label for="nombre">Nombre Producto</label>
+            <input type="text" name="nombre" id="nombre" value="<%= jsonProductosFiltrado.nombre %>">
+        </p>
+
+        <p>
+            <label for="precio">Precio</label>
+            <input type="number" name="precio" id="precio" value="<%= jsonProductosFiltrado.precio %>">
+        </p>
+
+        <p>
+            <label for="descripcion">Descripcion</label>
+            <input type="text" name="descripcion" id="descripcion" value="<%= jsonProductosFiltrado.descripcion %>">
+        </p>
+
+        <p>
+            <label for="marca">Marca</label>
+            <input type="text" name="marca" id="marca" value="<%= jsonProductosFiltrado.marca %>">
+        </p>
+
+        <p>
+            <label for="stock">Stock</label>
+            <input type="number" name="stock" id="stock" value="<%= jsonProductosFiltrado.stock %>">
+        </p>
+
+       <input type="submit" value="Aceptar">
+
+    </form>
+    
+    
+</body>
+</html>
