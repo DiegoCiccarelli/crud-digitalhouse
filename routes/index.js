@@ -6,14 +6,10 @@ var router = express.Router();
 const productsController = require('../controllers/productsController');
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Listado de Productos' });
-});
+//router.get('/', productsController.listado);
 
 
-router.get('/new', function(req, res, next){
-  res.render('new', {title: 'Nuevo Artículo'});
-});
+router.get('/new', productsController.nuevoVacio);
 
 router.post('/new', productsController.nuevo);
 

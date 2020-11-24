@@ -1,6 +1,11 @@
 const { VariantAlsoNegotiates } = require("http-errors");
 const fs = require('fs');
+const { allowedNodeEnvironmentFlags } = require("process");
 const productosController = {
+
+    nuevoVacio: function(req, res, next){
+        res.render('new', {title: 'Nuevo Artículo'});
+      },
 
     nuevo: function(req, res, next){
   
@@ -72,6 +77,16 @@ const productosController = {
         };
 
     },
+
+    // listado: function(req, res, next){
+
+    //     let products = fs.readFileSync('data/products.json',{encoding: 'utf8'});
+    //     let jsonProductos = JSON.parse(products);
+
+    //     res.render('index', {jsonProductos: jsonProductos, title: "Listado productos ABM"});
+        
+
+    // }
 
     
    

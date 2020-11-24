@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
   <head>
     <title><%= title %></title>
@@ -6,6 +6,9 @@
   </head>
   <body>
     <h1>Listado de Productos</h1>
-    <p></p>
+    <% for(i=0; i<jsonProductos.length; i++){ %>
+      <p><%= jsonProductos[i].nombre%> <a href="localhost:3000"></a></p>
+
+  <% }%>
   </body>
-</html>
+</html> -->
